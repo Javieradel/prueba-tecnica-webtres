@@ -40,32 +40,79 @@
             <form>
                 <fieldset>
                     <legend class="fs-6 text-muted ">Tipo de documento</legend>
-                    <div class="form-check bg-light p-2">
+                    <div class="form-check bg-light p-2 mt-2">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                         <label class="form-check-label" for="flexRadioDefault1">
                             Cédula
                         </label>
                     </div>
 
-                    <div class="form-check bg-light p-2">
+                    <div class="form-check bg-light p-2 mt-2">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                         <label class="form-check-label" for="flexRadioDefault2">
                             Cédula de residencia
                         </label>
                     </div>
 
-                    <div class="form-check bg-light p-2">
+                    <div class="form-check bg-light p-2 mt-2">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
                         <label class="form-check-label" for="flexRadioDefault3">
                             Pasaporte
                         </label>
                     </div>
                 </fieldset>
+               
+                <fieldset class="mt-3">
+                    <div class="">
+                        <legend class="fs-6 text-muted ">
+                            <label for="FormControlInput1" class="">Nº de identificación (sin guiones)</label>
+                        </legend>
+                        <input type="text" placeholder="Ejemplo: 0012510930088B" class="form-control" id="FormControlInput1">
+                      </div>
+                </fieldset>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <footer class="footer-form footer-distance text-center">
+                    <a href="#exampleModal" class="d-inline-block my-4 text-black"
+                        id="btn-modal"
+                    >
+                        ¿Por qué me solicitan esta información?
+                    </a>
+                    <a href="/pages/step-3.html">
+                        <button type="button" class="btn btn-primary">Continuar</button>
+                    </a>
+                </footer>
             </form>
         </main>
     </div>
 
+  <!-- Modal -->
+  <div class="modal-backlight d-none animate__animated animate__fadeIn" id="modal">
+      <div class="modal-bottom-position animate__animated animate__fadeInUp" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <button type="button" class="btn-close" id="close-modal"></button>
+          
+          <div class="modal-body">
+              <p class="text-left">
+                  Aenean augue magna, vestibulum vitae sapien at, consectetur tristique orci. Nam mauris velit, faucibus eget leo id, imperdiet gravida turpis. Proin euismod pellentesque tristique. Nullam convallis facilisis dictum. Etiam ultricies orci ut dictum vehicula. Quisque ut massa vestibulum, ultricies nisi a, dignissim leo.
+              </p>
+          </div>
+        </div>
+  </div>
+  <script>
+      ((function (){
+        'use strict'
+    let modalOpened = false
+    let modal = document.querySelector('#modal')
+    let btn = document.querySelector('#btn-modal')
+    let btnInsideModal = document.querySelector('#close-modal')
+    function handleModal(e,element=modal){
+        modalOpened ? element.classList.add('d-none') : element.classList.remove('d-none') 
+        modalOpened = !modalOpened
+    }
+
+    btn.addEventListener('click', handleModal)
+    btnInsideModal.addEventListener('click', handleModal)
+    
+      })())
+    </script>
 </body>
 </html>
