@@ -1,3 +1,22 @@
 header.main-header .logo-container{
-    width: 197px;
+    width: 166px;
+}
+
+.poster img{
+    max-width: 330px;
+}
+main.content-main{
+    max-width: 668px;
+}
+.btn{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+}
+.btn-primary{
+    background-color: black;
+}
+.btn-secondary{
+    background-color: white;
+    color: black;
 }
