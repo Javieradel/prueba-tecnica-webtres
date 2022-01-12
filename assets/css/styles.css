@@ -8,6 +8,15 @@ header.main-header .logo-container{
 main.content-main{
     max-width: 668px;
 }
+.progress{
+    height: 5px;
+}
+.progress-bar{
+    height: 5px;
+}
+.progress-item{
+    max-width: 200px;
+}
 .btn{
     border: 1px solid black;
     border-radius: 5px;
