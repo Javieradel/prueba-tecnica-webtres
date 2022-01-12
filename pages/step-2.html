@@ -9,7 +9,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
         <link rel="stylesheet" href="../assets/css/styles.css">
-        <title>Naitus | Login</title>
+        <title>Naitus | Registro</title>
     </head>
 <body>
     <div class="step-2 px-4 animate__animated animate__fadeIn">
@@ -17,7 +17,7 @@
             <nav class="mt-5 mt-sm-3">
                 <ul class="actions list-unstyled d-flex justify-content-around align-items-center">
                     <li class="item my-2">
-                        <a href="/pages/step-2.html" class="text-muted text-decoration-none">
+                        <a href="/pages/step-1.html" class="text-muted text-decoration-none">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16 7H3.83L9.42 1.41L8 0L0 8L8 16L9.41 14.59L3.83 9H16V7Z" fill="black"/>
                             </svg>
@@ -26,7 +26,7 @@
                     </li>
                     <li class="item my-2 w-50 progress-item">
                         <div class="progress">
-                            <div class="progress-bar" style="width: 100%; background-color: #7C7C7C;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" style="width: 50%; background-color: #7C7C7C;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                     </li>
                 </ul>
@@ -34,30 +34,36 @@
         </header>
 
         <main class="content-main mt-sm-5 mx-auto">
-            <section class="poster">
-                <figure class="d-flex flex-column flex-sm-row text-center">
-                    <img src="/assets/imgs/Rectangle 65.jpg"
-                    class="mx-auto" 
-                    alt="Naitus, tu billetera de ahorro de tiempo y dinero" srcset="">
-                    <div class="d-flex flex-column justify-content-sm-center">
-                        <figcaption class="fs-5 text-center" >
-                            Somos una <strong> billetera online </strong> que te permitirá <strong>ahorrar tiempo y dinero.</strong>
-                        </figcaption>
-    
-                        <nav class="mt-5 mt-sm-3">
-                            <ol class="actions list-unstyled d-flex flex-column flex-sm-row justify-content-center justify-content-sm-around">
-                                <li class="item my-2 ">
-                                    <a href="/pages/step-2.html" class="btn btn-primary">Crear cuenta</a>
-                                </li>
-            
-                                <li class="item my-2">
-                                    <a href="" class="btn btn-secondary">Ya tengo cuenta</a>
-                                </li>
-                            </ol>
-                        </nav>
+            <h3>
+                Documento de identidad
+            </h3>
+            <form>
+                <fieldset>
+                    <legend class="fs-6 text-muted ">Tipo de documento</legend>
+                    <div class="form-check bg-light p-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Cédula
+                        </label>
                     </div>
-                </figure>
-            </section>
+
+                    <div class="form-check bg-light p-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Cédula de residencia
+                        </label>
+                    </div>
+
+                    <div class="form-check bg-light p-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                        <label class="form-check-label" for="flexRadioDefault3">
+                            Pasaporte
+                        </label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </main>
     </div>
 
